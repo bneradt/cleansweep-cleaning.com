@@ -22,5 +22,6 @@ Deploy the current changes to production:
    docker compose stop cleansweep
    docker compose build cleansweep
    docker compose up -d cleansweep
+   docker compose down ats && docker compose up -d ats
    ```
 4. Tail the logs briefly to confirm startup succeeded
