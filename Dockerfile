@@ -17,7 +17,7 @@ RUN sed -i 's/listen = 127.0.0.1:9000/listen = \/var\/run\/php-fpm.sock/' /etc/p
     && sed -i 's/group = nobody/group = nginx/' /etc/php84/php-fpm.d/www.conf
 
 # Copy site files
-COPY mysite/ /usr/share/nginx/html/
+COPY static-site/ /usr/share/nginx/html/
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Create startup script

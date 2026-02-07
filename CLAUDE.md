@@ -6,11 +6,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Clean Sweep Cleaning Services - a static business website with PHP backend for a residential/commercial cleaning company in Champaign-Urbana, IL.
 
-**Tech Stack**: HTML5, CSS3, Vanilla JavaScript, PHP 8.2, Nginx, Docker (Alpine Linux)
+**Tech Stack**: WordPress static export, PHP 8.4, Nginx, Docker (Alpine Linux)
 
 ## Development
 
-This is a static website with no build tools. Edit HTML/CSS/JS files directly in `mysite/`.
+This is a static export of the original WordPress site. The site files are in `static-site/` directory.
+
+**Source Sites:**
+- `oldsite/` - Original WordPress installation from Mainstreethosting (archived, not used)
+- `mysite/` - Previous custom static site (archived, not used)
+- `static-site/` - **ACTIVE** - Static export from live WordPress site
 
 ### Local Development
 
@@ -43,34 +48,36 @@ The site runs as the `cleansweep` service in the main `docker-compose.yml` in `~
 ## Architecture
 
 ```
-mysite/                     # Web application root
-├── index.html              # Homepage
-├── about.html              # About page
-├── services.html           # Services listing
-├── contact.html            # Contact/Quote form
-├── gallery.html            # Portfolio gallery
+static-site/                          # Web application root (static WordPress export)
+├── index.html                        # Homepage
+├── about/index.html                  # About page
+├── our-services/index.html           # Services listing
+├── contact/index.html                # Contact/Quote form
+├── gallery/index.html                # Portfolio gallery
+├── contact-form-handler.js           # JavaScript to intercept Gravity Forms
 ├── api/
-│   └── send-email.php      # Contact form handler (sends to pdixon701@gmail.com)
-├── css/
-│   └── style.css           # Main stylesheet with CSS variables for theming
-├── js/
-│   └── main.js             # Mobile menu, form submission, smooth scrolling
-└── images/
-    ├── gallery/            # Portfolio images
-    └── services/           # Service images
+│   └── send-email.php                # Contact form handler (sends to pdixon701@gmail.com)
+├── wp-content/                       # WordPress static assets
+│   ├── themes/                       # Theme CSS, images
+│   ├── plugins/                      # Plugin assets (fonts, icons)
+│   └── uploads/                      # Gallery images
+└── wp-includes/                      # WordPress core assets (JS, CSS)
 ```
 
 ### Key Files
 
-- **Dockerfile**: Alpine Linux container with Nginx + PHP 8.2-FPM
+- **Dockerfile**: Alpine Linux container with Nginx + PHP 8.4-FPM
 - **nginx.conf**: Web server config (gzip, 30-day static caching, security headers, PHP routing)
-- **mysite/api/send-email.php**: Contact form endpoint with input validation and email sending
+- **static-site/api/send-email.php**: Contact form endpoint with input validation and email sending
+- **static-site/contact-form-handler.js**: Intercepts WordPress Gravity Forms and submits to PHP backend
 
-### Frontend Patterns
+### Contact Form
 
-- CSS variables for theming: `--primary-color` (green), `--secondary-color` (blue), `--accent-color` (orange)
-- Mobile-responsive with hamburger menu toggle
-- Form submissions via fetch API with JSON responses
+The original WordPress site used Gravity Forms plugin. In the static export:
+- Gravity Forms HTML/CSS is preserved for styling consistency
+- **contact-form-handler.js** intercepts form submissions
+- Form data is sent to **/api/send-email.php** via fetch API
+- Emails sent to: **pdixon701@gmail.com** (Peter Dixon)
 
 ### PHP Backend
 

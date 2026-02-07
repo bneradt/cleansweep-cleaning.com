@@ -1,0 +1,574 @@
+<!doctype html>
+
+<!--[if lt IE 7]><html lang="en-US" class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html lang="en-US" class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" class="no-js"><!--<![endif]-->
+
+	<head><meta charset="utf-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.4",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseout","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),await this.T(),await this.F(),await this.j(),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise(t=>setTimeout(t,500-Date.now()+this.lastTouchEnd)),this.I(),this.H(),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))},{isRocket:!0})}o(){window.addEventListener("pageshow",t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0},{isRocket:!0}),window.addEventListener("pagehide",()=>{this.onFirstUserAction=null},{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",function i(o){o.changedTouches[0]&&t.changedTouches[0]&&Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}),"INPUT"===o.target.tagName&&"text"===o.target.type||(o.target.dispatchEvent(new TouchEvent("touchend",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new MouseEvent("mouseover",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1,clientX:o.changedTouches[0].clientX,clientY:o.changedTouches[0].clientY})),event.preventDefault()))},{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,t.composedPath&&t.composedPath()[0].getRootNode()instanceof ShadowRoot&&(t.rocketTarget=t.composedPath()[0]),this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach(t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.addEventListener("visibilitychange",this.userEventHandler,{isRocket:!0})}U(){this.userEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.removeEventListener("visibilitychange",this.userEventHandler,{isRocket:!0}),this.savedUserEvents.forEach(t=>{(t.rocketTarget||t.target).dispatchEvent(new window[t.constructor.name](t.type,t))})}m(){const t="return false",e=Array.from(this.attributeEvents,t=>"data-rocket-"+t),i="["+this.attributeEvents.join("],[")+"]",o="[data-rocket-"+this.attributeEvents.join("],[data-rocket-")+"]",s=(e,i,o)=>{o&&o!==t&&(e.setAttribute("data-rocket-"+i,o),e["rocket"+i]=new Function("event",o),e.setAttribute(i,t))};new MutationObserver(t=>{for(const n of t)"attributes"===n.type&&(n.attributeName.startsWith("data-rocket-")||this.everythingLoaded?n.attributeName.startsWith("data-rocket-")&&this.everythingLoaded&&this.N(n.target,n.attributeName.substring(12)):s(n.target,n.attributeName,n.target.getAttribute(n.attributeName))),"childList"===n.type&&n.addedNodes.forEach(t=>{if(t.nodeType===Node.ELEMENT_NODE)if(this.everythingLoaded)for(const i of[t,...t.querySelectorAll(o)])for(const t of i.getAttributeNames())e.includes(t)&&this.N(i,t.substring(12));else for(const e of[t,...t.querySelectorAll(i)])for(const t of e.getAttributeNames())this.attributeEvents.includes(t)&&s(e,t,e.getAttribute(t))})}).observe(document,{subtree:!0,childList:!0,attributeFilter:[...this.attributeEvents,...e]})}I(){this.attributeEvents.forEach(t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach(e=>{this.N(e,t)})})}N(t,e){const i=t.getAttribute("data-rocket-"+e);i&&(t.setAttribute(e,i),t.removeAttribute("data-rocket-"+e))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):(t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o}),"mouseenter"!==e&&"mouseleave"!==e||t.originalAddEventListener.call(this,e,t.savedUserEvents.push,o))},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}J(t,e){this.savedEventListeners=this.savedEventListeners.filter(i=>{let o=i.type,s=i.target||window;return e!==o||t!==s||(this.B(o,s)&&(i.type="rocket-"+o),this.$(i),!1)})}H(){EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener,this.savedEventListeners.forEach(t=>this.$(t))}$(t){t.remove?this.originalRemoveEventListener.call(t.target,t.type,t.func,t.options):this.originalAddEventListener.call(t.target,t.type,t.func,t.options)}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map(t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e})),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,()=>{e[t].forEach(t=>t())},{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout(()=>i.bind(document)(o)):i.bind(document)(o)}return"function"==typeof i&&(t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s)),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise(t=>{this.userActionTriggered?t():this.onFirstUserAction=t})}async L(){return new Promise(t=>{document.addEventListener("DOMContentLoaded",()=>{this.realDomReadyFired=!0,t()},{isRocket:!0})})}async j(){return this.realWindowLoadedFired?Promise.resolve():new Promise(t=>{window.addEventListener("load",t,{isRocket:!0})})}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver(t=>{for(const e of t)e.addedNodes.forEach(t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise(e=>{const i=()=>{const i=this.pendingScripts.findIndex(e=>e.script===t);i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)})})})}),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async F(){await this.X(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.F()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this.Y(t,"preconnect")}async G(t){if(await this.K(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise(e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))}),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",()=>{i.setAttribute("data-rocket-status","failed-network"),e()},{isRocket:!0}),setTimeout(()=>{i.isConnected||e()},1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.G(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())},{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}});t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.G(e),this.C(t)):Promise.resolve()}O(){this.Y([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}Y(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach(t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}}),document.head.appendChild(o)}W(){this.trash.forEach(t=>t.remove())}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(document,"DOMContentLoaded"),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.K(),this.J(window,"DOMContentLoaded"),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(window,"load"),window.dispatchEvent(new Event("rocket-load")),await this.K(),window.rocketonload&&window.rocketonload(),await this.K(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this.K(),this.J(window,"pageshow");const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.K(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async K(){Date.now()-this.lastBreath>45&&(await this.X(),this.lastBreath=Date.now())}async X(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+		
+
+				<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<title>Privacy Policy - Clean Sweep Cleaning Services</title>
+<link data-rocket-prefetch href="https://use.fontawesome.com" rel="dns-prefetch">
+<link data-rocket-prefetch href="https://www.googletagmanager.com" rel="dns-prefetch">
+<link crossorigin data-rocket-preload as="font" href="../wp-content/cache/fonts/1/google-fonts/fonts/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2" rel="preload">
+<link crossorigin data-rocket-preload as="font" href="../wp-content/cache/fonts/1/google-fonts/fonts/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXo.woff2" rel="preload">
+<link crossorigin data-rocket-preload as="font" href="https://use.fontawesome.com/releases/v6.5.1/webfonts/fa-brands-400.woff2" rel="preload">
+<style id="wpr-usedcss">img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:0 0!important;padding:0!important}:where(.wp-block-button__link){border-radius:9999px;box-shadow:none;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}:root :where(.wp-block-button .wp-block-button__link.is-style-outline),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link){border:2px solid;padding:.667em 1.333em}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-text-color)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color)){color:currentColor}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background)){background-color:initial;background-image:none}:where(.wp-block-calendar table:not(.has-background) th){background:#ddd}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}:where(.wp-block-post-comments input[type=submit]){border:none}.wp-block-cover{align-items:center;background-position:50%;box-sizing:border-box;display:flex;justify-content:center;min-height:430px;overflow:hidden;overflow:clip;padding:1em;position:relative}.wp-block-cover.has-parallax{background-attachment:fixed;background-repeat:no-repeat;background-size:cover}@supports (-webkit-touch-callout:inherit){.wp-block-cover.has-parallax{background-attachment:scroll}}@media (prefers-reduced-motion:reduce){.wp-block-cover.has-parallax{background-attachment:scroll}}:where(.wp-block-cover-image:not(.has-text-color)),:where(.wp-block-cover:not(.has-text-color)){color:#fff}:where(.wp-block-cover-image.is-light:not(.has-text-color)),:where(.wp-block-cover.is-light:not(.has-text-color)){color:#000}:root :where(.wp-block-cover h1:not(.has-text-color)),:root :where(.wp-block-cover h2:not(.has-text-color)),:root :where(.wp-block-cover h3:not(.has-text-color)),:root :where(.wp-block-cover h4:not(.has-text-color)),:root :where(.wp-block-cover h5:not(.has-text-color)),:root :where(.wp-block-cover h6:not(.has-text-color)),:root :where(.wp-block-cover p:not(.has-text-color)){color:inherit}:where(.wp-block-file){margin-bottom:1.5em}:where(.wp-block-file__button){border-radius:2em;display:inline-block;padding:.5em 1em}:where(.wp-block-file__button):is(a):active,:where(.wp-block-file__button):is(a):focus,:where(.wp-block-file__button):is(a):hover,:where(.wp-block-file__button):is(a):visited{box-shadow:none;color:#fff;opacity:.85;text-decoration:none}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment)){line-height:1.1}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment-excerpt p)){line-height:1.8}:root :where(.wp-block-latest-posts.is-grid){padding:0}:root :where(.wp-block-latest-posts.wp-block-latest-posts__list){padding-left:0}ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}:where(.wp-block-navigation.has-background .wp-block-navigation-item a:not(.wp-element-button)),:where(.wp-block-navigation.has-background .wp-block-navigation-submenu a:not(.wp-element-button)){padding:.5em 1em}:where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item a:not(.wp-element-button)),:where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-submenu a:not(.wp-element-button)),:where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-submenu button.wp-block-navigation-item__content),:where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-pages-list__item button.wp-block-navigation-item__content){padding:.5em 1em}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}:where(.wp-block-post-comments-form) input:not([type=submit]),:where(.wp-block-post-comments-form) textarea{border:1px solid #949494;font-family:inherit;font-size:1em}:where(.wp-block-post-comments-form) input:where(:not([type=submit]):not([type=checkbox])),:where(.wp-block-post-comments-form) textarea{padding:calc(.667em + 2px)}:where(.wp-block-post-excerpt){box-sizing:border-box;margin-bottom:var(--wp--style--block-gap);margin-top:var(--wp--style--block-gap)}:where(.wp-block-preformatted.has-background){padding:1.25em 2.375em}:where(.wp-block-search__button){border:1px solid #ccc;padding:6px 10px}:where(.wp-block-search__input){font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-transform:inherit}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){border:1px solid #949494;box-sizing:border-box;padding:4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input{border:none;border-radius:0;padding:0 4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input:focus{outline:0}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) :where(.wp-block-search__button){padding:4px 8px}:root :where(.wp-block-separator.is-style-dots){height:auto;line-height:1;text-align:center}:root :where(.wp-block-separator.is-style-dots):before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}:root :where(.wp-block-site-logo.is-style-rounded){border-radius:9999px}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link{background-color:#f0f0f0;color:#444}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-amazon{background-color:#f90;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-bandcamp{background-color:#1ea0c3;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-behance{background-color:#0757fe;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-bluesky{background-color:#0a7aff;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-codepen{background-color:#1e1f26;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-deviantart{background-color:#02e49b;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-dribbble{background-color:#e94c89;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-dropbox{background-color:#4280ff;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-etsy{background-color:#f45800;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-facebook{background-color:#0866ff;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-fivehundredpx{background-color:#000;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-flickr{background-color:#0461dd;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-foursquare{background-color:#e65678;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-github{background-color:#24292d;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-goodreads{background-color:#eceadd;color:#382110}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-google{background-color:#ea4434;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-gravatar{background-color:#1d4fc4;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-instagram{background-color:#f00075;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-lastfm{background-color:#e21b24;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-linkedin{background-color:#0d66c2;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-mastodon{background-color:#3288d4;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-medium{background-color:#000;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-meetup{background-color:#f6405f;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-patreon{background-color:#000;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-pinterest{background-color:#e60122;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-pocket{background-color:#ef4155;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-reddit{background-color:#ff4500;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-skype{background-color:#0478d7;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-snapchat{background-color:#fefc00;color:#fff;stroke:#000}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-soundcloud{background-color:#ff5600;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-spotify{background-color:#1bd760;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-telegram{background-color:#2aabee;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-threads{background-color:#000;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-tiktok{background-color:#000;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-tumblr{background-color:#011835;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-twitch{background-color:#6440a4;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-twitter{background-color:#1da1f2;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-vimeo{background-color:#1eb7ea;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-vk{background-color:#4680c2;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-wordpress{background-color:#3499cd;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-whatsapp{background-color:#25d366;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-x{background-color:#000;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-yelp{background-color:#d32422;color:#fff}:where(.wp-block-social-links:not(.is-style-logos-only)) .wp-social-link-youtube{background-color:red;color:#fff}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link{background:0 0}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link svg{height:1.25em;width:1.25em}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-amazon{color:#f90}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-bandcamp{color:#1ea0c3}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-behance{color:#0757fe}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-bluesky{color:#0a7aff}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-codepen{color:#1e1f26}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-deviantart{color:#02e49b}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-dribbble{color:#e94c89}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-dropbox{color:#4280ff}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-etsy{color:#f45800}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-facebook{color:#0866ff}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-fivehundredpx{color:#000}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-flickr{color:#0461dd}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-foursquare{color:#e65678}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-github{color:#24292d}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-goodreads{color:#382110}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-google{color:#ea4434}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-gravatar{color:#1d4fc4}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-instagram{color:#f00075}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-lastfm{color:#e21b24}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-linkedin{color:#0d66c2}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-mastodon{color:#3288d4}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-medium{color:#000}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-meetup{color:#f6405f}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-patreon{color:#000}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-pinterest{color:#e60122}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-pocket{color:#ef4155}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-reddit{color:#ff4500}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-skype{color:#0478d7}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-snapchat{color:#fff;stroke:#000}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-soundcloud{color:#ff5600}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-spotify{color:#1bd760}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-telegram{color:#2aabee}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-threads{color:#000}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-tiktok{color:#000}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-tumblr{color:#011835}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-twitch{color:#6440a4}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-twitter{color:#1da1f2}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-vimeo{color:#1eb7ea}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-vk{color:#4680c2}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-whatsapp{color:#25d366}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-wordpress{color:#3499cd}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-x{color:#000}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-yelp{color:#d32422}:where(.wp-block-social-links.is-style-logos-only) .wp-social-link-youtube{color:red}:root :where(.wp-block-social-links .wp-social-link a){padding:.25em}:root :where(.wp-block-social-links.is-style-logos-only .wp-social-link a){padding:0}:root :where(.wp-block-social-links.is-style-pill-shape .wp-social-link a){padding-left:.66667em;padding-right:.66667em}:root :where(.wp-block-tag-cloud.is-style-outline){display:flex;flex-wrap:wrap;gap:1ch}:root :where(.wp-block-tag-cloud.is-style-outline a){border:1px solid;font-size:unset!important;margin-right:0;padding:1ch 2ch;text-decoration:none!important}:root :where(.wp-block-table-of-contents){box-sizing:border-box}:where(.wp-block-term-description){box-sizing:border-box;margin-bottom:var(--wp--style--block-gap);margin-top:var(--wp--style--block-gap)}:where(pre.wp-block-verse){font-family:inherit}.entry-content{counter-reset:footnotes}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip:auto!important;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}:root{--wp--preset--aspect-ratio--square:1;--wp--preset--aspect-ratio--4-3:4/3;--wp--preset--aspect-ratio--3-4:3/4;--wp--preset--aspect-ratio--3-2:3/2;--wp--preset--aspect-ratio--2-3:2/3;--wp--preset--aspect-ratio--16-9:16/9;--wp--preset--aspect-ratio--9-16:9/16;--wp--preset--color--black:#000000;--wp--preset--color--cyan-bluish-gray:#abb8c3;--wp--preset--color--white:#ffffff;--wp--preset--color--pale-pink:#f78da7;--wp--preset--color--vivid-red:#cf2e2e;--wp--preset--color--luminous-vivid-orange:#ff6900;--wp--preset--color--luminous-vivid-amber:#fcb900;--wp--preset--color--light-green-cyan:#7bdcb5;--wp--preset--color--vivid-green-cyan:#00d084;--wp--preset--color--pale-cyan-blue:#8ed1fc;--wp--preset--color--vivid-cyan-blue:#0693e3;--wp--preset--color--vivid-purple:#9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple:linear-gradient(135deg,rgba(6, 147, 227, 1) 0%,rgb(155, 81, 224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:linear-gradient(135deg,rgb(122, 220, 180) 0%,rgb(0, 208, 130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:linear-gradient(135deg,rgba(252, 185, 0, 1) 0%,rgba(255, 105, 0, 1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:linear-gradient(135deg,rgba(255, 105, 0, 1) 0%,rgb(207, 46, 46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:linear-gradient(135deg,rgb(238, 238, 238) 0%,rgb(169, 184, 195) 100%);--wp--preset--gradient--cool-to-warm-spectrum:linear-gradient(135deg,rgb(74, 234, 220) 0%,rgb(151, 120, 209) 20%,rgb(207, 42, 186) 40%,rgb(238, 44, 130) 60%,rgb(251, 105, 98) 80%,rgb(254, 248, 76) 100%);--wp--preset--gradient--blush-light-purple:linear-gradient(135deg,rgb(255, 206, 236) 0%,rgb(152, 150, 240) 100%);--wp--preset--gradient--blush-bordeaux:linear-gradient(135deg,rgb(254, 205, 165) 0%,rgb(254, 45, 45) 50%,rgb(107, 0, 62) 100%);--wp--preset--gradient--luminous-dusk:linear-gradient(135deg,rgb(255, 203, 112) 0%,rgb(199, 81, 192) 50%,rgb(65, 88, 208) 100%);--wp--preset--gradient--pale-ocean:linear-gradient(135deg,rgb(255, 245, 203) 0%,rgb(182, 227, 212) 50%,rgb(51, 167, 181) 100%);--wp--preset--gradient--electric-grass:linear-gradient(135deg,rgb(202, 248, 128) 0%,rgb(113, 206, 126) 100%);--wp--preset--gradient--midnight:linear-gradient(135deg,rgb(2, 3, 129) 0%,rgb(40, 116, 252) 100%);--wp--preset--font-size--small:13px;--wp--preset--font-size--medium:20px;--wp--preset--font-size--large:36px;--wp--preset--font-size--x-large:42px;--wp--preset--spacing--20:0.44rem;--wp--preset--spacing--30:0.67rem;--wp--preset--spacing--40:1rem;--wp--preset--spacing--50:1.5rem;--wp--preset--spacing--60:2.25rem;--wp--preset--spacing--70:3.38rem;--wp--preset--spacing--80:5.06rem;--wp--preset--shadow--natural:6px 6px 9px rgba(0, 0, 0, .2);--wp--preset--shadow--deep:12px 12px 50px rgba(0, 0, 0, .4);--wp--preset--shadow--sharp:6px 6px 0px rgba(0, 0, 0, .2);--wp--preset--shadow--outlined:6px 6px 0px -3px rgba(255, 255, 255, 1),6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp:6px 6px 0px rgba(0, 0, 0, 1)}:where(.is-layout-flex){gap:.5em}:where(.is-layout-grid){gap:.5em}:where(.wp-block-post-template.is-layout-flex){gap:1.25em}:where(.wp-block-post-template.is-layout-grid){gap:1.25em}:where(.wp-block-columns.is-layout-flex){gap:2em}:where(.wp-block-columns.is-layout-grid){gap:2em}:root :where(.wp-block-pullquote){font-size:1.5em;line-height:1.6}@font-face{font-family:'Bebas Neue';font-style:normal;font-weight:400;font-display:swap;src:url(../wp-content/cache/fonts/1/google-fonts/fonts/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:Montserrat;font-style:normal;font-weight:400;font-display:swap;src:url(../wp-content/cache/fonts/1/google-fonts/fonts/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXo.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}:root{--shiftnav-panel-width:clamp(min(290px,calc(100vw - 48px)), min(calc(100vw - 48px), 600px), 100vw);--shiftnav-toggle-bar-height:48px}.shiftnav,.shiftnav *,.shiftnav-toggle,.shiftnav-toggle *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;line-height:1.3em;-webkit-tap-highlight-color:transparent;padding:0;margin:0;background:none}.shiftnav-wrap{padding:0;margin:0;background:0 0;position:relative;max-width:100%;overflow:hidden}body.shiftnav-lock-x.shiftnav-enabled{overflow-x:hidden}body.shiftnav-lock.shiftnav-open{overflow:hidden}#shiftnav-toggle-main,.shiftnav,.shiftnav-wrap{-webkit-transition:-webkit-transform .5s;-moz-transition:-moz-transform .5s;-ms-transition:-ms-transform .5s;-o-transition:-o-transform .5s;transition:transform .5s}.shiftnav .fa,.shiftnav-toggle .fa{font-family:FontAwesome;font-weight:400}.shiftnav-toggle{cursor:pointer}#shiftnav-toggle-main{position:fixed;top:0;left:0;width:100%;max-width:100%;box-sizing:border-box;padding:0 10px;z-index:500000;text-align:center}#shiftnav-toggle-main{background:#1d1d20;color:#eee}#shiftnav-toggle-main a{color:inherit;text-decoration:none}#shiftnav-toggle-main .shiftnav-main-toggle-content{padding:16px 40px}#shiftnav-toggle-main.shiftnav-toggle-main-align-center .shiftnav-main-toggle-content{width:100%;box-sizing:border-box;position:absolute;left:0}.shiftnav-toggle-main-block{padding:16px 20px;display:inline-block;line-height:1em}#shiftnav-toggle-main.shiftnav-toggle-style-burger_only{width:auto;padding:0;margin:0}#shiftnav-toggle-main.shiftnav-toggle-main-entire-bar:before{float:left;content:'\f0c9';font-family:FontAwesome;padding:16px 20px;margin-left:-10px;position:relative;z-index:20;line-height:1em}.shiftnav-open #shiftnav-toggle-main.shiftnav-toggle-main-entire-bar.shiftnav-toggle-icon-x:before{content:'\f00d'}.shiftnav-open-right #shiftnav-toggle-main.shiftnav-toggle-main-entire-bar:before{float:right;padding-left:20px}.shiftnav-fixed-right{position:fixed;top:0;z-index:9999999;-webkit-transition:-webkit-transform .5s;-moz-transition:-moz-transform .5s;-ms-transition:-ms-transform .5s;-o-transition:-o-transform .5s;transition:transform .5s}.shiftnav-fixed-right{right:0}.admin-bar .shiftnav-fixed-right{top:32px}@media screen and (max-width:782px){.admin-bar .shiftnav-fixed-right{top:46px}}.shiftnav-open.shiftnav-open-left #shiftnav-toggle-main,.shiftnav-open.shiftnav-open-left .shiftnav-wrap{-webkit-transform:translateX(var(--shiftnav-panel-width));-moz-transform:translateX(var(--shiftnav-panel-width));-ms-transform:translateX(var(--shiftnav-panel-width));-o-transform:translateX(var(--shiftnav-panel-width));transform:translateX(var(--shiftnav-panel-width))}.shiftnav-open.shiftnav-open-right #shiftnav-toggle-main,.shiftnav-open.shiftnav-open-right .shiftnav-wrap,.shiftnav-open.shiftnav-open-right>.shiftnav-fixed-right{-webkit-transform:translateX(calc(-1 * var(--shiftnav-panel-width)));-moz-transform:translateX(calc(-1 * var(--shiftnav-panel-width)));-ms-transform:translateX(calc(-1 * var(--shiftnav-panel-width)));-o-transform:translateX(calc(-1 * var(--shiftnav-panel-width)));transform:translateX(calc(-1 * var(--shiftnav-panel-width)))}body.admin-bar #shiftnav-toggle-main,body.admin-bar .shiftnav{top:32px;top:var(--wp-admin--admin-bar--height)}body.admin-bar .shiftnav{padding-bottom:32px;padding-bottom:var(--wp-admin--admin-bar--height)}#wpadminbar:hover{z-index:999999}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}body.admin-bar #shiftnav-toggle-main,body.admin-bar .shiftnav{top:0}body.admin-bar .shiftnav{padding-bottom:0}html #wpadminbar:has(~ #shiftnav-toggle-main){top:var(--shiftnav-toggle-bar-height)}html.shiftnav-nogap{margin-top:0!important}}.shiftnav-wrap{left:0;top:0;z-index:250;padding-top:1px;margin-top:-1px}.shiftnav-open .shiftnav-wrap{height:100%}.shiftnav:after{content:' ';display:block;position:absolute;right:-15px;top:0;height:100%;width:15px;background:0 0;-webkit-box-shadow:0 0 15px rgba(0,0,0,.8);-moz-box-shadow:0 0 15px rgba(0,0,0,.8);-ms-box-shadow:0 0 15px rgba(0,0,0,.8);-o-box-shadow:0 0 15px rgba(0,0,0,.8);box-shadow:0 0 15px rgba(0,0,0,.8);z-index:10000}.shiftnav.shiftnav-right-edge:after{left:-15px;right:auto}.shiftnav-no-transforms .shiftnav:after{display:none!important}.shiftnav.shiftnav-nojs{display:none}.shiftnav{position:fixed;top:0;width:var(--shiftnav-panel-width);height:100%;height:100vh;height:100dvh;background:#fff;z-index:600000;overflow:hidden;visibility:hidden;opacity:0;overscroll-behavior:contain}.shiftnav-open .shiftnav,.shiftnav-transitioning .shiftnav{visibility:visible;opacity:1}.shiftnav-inner{-webkit-overflow-scrolling:touch;height:100%;overflow-y:auto;overflow-x:hidden}.shiftnav.shiftnav-left-edge{left:0}.shiftnav.shiftnav-right-edge{right:0}.shiftnav-target:focus{outline-offset:-2px}.shiftnav.shiftnav-left-edge{--shiftnav-panel-translate-x:calc(-1 * var(--shiftnav-panel-width))}.shiftnav.shiftnav-right-edge{--shiftnav-panel-translate-x:var(--shiftnav-panel-width)}.shiftnav.shiftnav-left-edge,.shiftnav.shiftnav-right-edge{-webkit-transform:translateX(var(--shiftnav-panel-translate-x));-moz-transform:translateX(var(--shiftnav-panel-translate-x));-ms-transform:translateX(var(--shiftnav-panel-translate-x));-o-transform:translateX(var(--shiftnav-panel-translate-x));transform:translateX(var(--shiftnav-panel-translate-x))}.shiftnav-open .shiftnav.shiftnav-open-target{-webkit-transform:translateX(0);-moz-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);transform:translateX(0)}.shiftnav-no-transforms .shiftnav{width:var(--shiftnav-panel-width)}.shiftnav-no-transforms .shiftnav.shiftnav-left-edge{left:calc(-1 * var(--shiftnav-panel-width))}.shiftnav-no-transforms.shiftnav-open .shiftnav.shiftnav-open-target.shiftnav-left-edge{left:0}.shiftnav-no-transforms .shiftnav.shiftnav-right-edge{left:auto;right:calc(-1 * var(--shiftnav-panel-width))}.shiftnav-no-transforms.shiftnav-open .shiftnav.shiftnav-open-target.shiftnav-right-edge{right:0}.shiftnav-no-transforms #shiftnav-toggle-main,.shiftnav-no-transforms .shiftnav{-webkit-transition:none;-moz-transition:none;-ms-transition:none;-o-transition:none;transition:none}.shiftnav-no-transforms.shiftnav-open-left #shiftnav-toggle-main{left:var(--shiftnav-panel-width)}.shiftnav-no-transforms.shiftnav-open-right #shiftnav-toggle-main{left:auto;right:var(--shiftnav-panel-width)}.shiftnav-no-transforms #shiftnav-toggle-main,.shiftnav-no-transforms .shiftnav-wrap{-webkit-transform:none!important;-moz-transform:none!important;-ms-transform:none!important;-o-transform:none!important;transform:none!important}.shiftnav-no-transforms .shiftnav-inner{padding-top:30px}.shiftnav .shiftnav-panel-close{display:block;position:absolute;right:0;padding:15px 20px;background:rgba(0,0,0,.2);z-index:20;cursor:pointer;border:none;color:inherit;font-size:inherit}.shiftnav .shiftnav-nav,.shiftnav ul.shiftnav-menu,.shiftnav ul.shiftnav-menu ul.sub-menu{position:static;display:block;top:auto;left:auto;float:none;min-width:0}.shiftnav nav.shiftnav-nav{position:relative;z-index:10}.shiftnav ul.shiftnav-menu{position:relative;clear:both;overflow:hidden}.shiftnav ul.shiftnav-menu,.shiftnav ul.shiftnav-menu ul.sub-menu{list-style:none;margin:0;padding:0}.shiftnav ul.shiftnav-menu li.menu-item{position:relative;margin:0;padding:0;background:none;list-style-type:none}.shiftnav .shiftnav-retract>button.shiftnav-target{border:none;font-size:inherit;background:0 0;display:block;width:100%}.shiftnav ul.shiftnav-menu li.menu-item>.shiftnav-target,.shiftnav ul.shiftnav-menu li.shiftnav-retract>.shiftnav-target{display:block;padding:15px 25px;line-height:1.6em;text-decoration:none;position:relative;cursor:pointer;-webkit-transition:.2s;-moz-transition:.2s;-ms-transition:.2s;-o-transition:.2s;transition:.2s all ease}.shiftnav ul.shiftnav-menu li.shiftnav-retract,.shiftnav ul.shiftnav-menu li.shiftnav-sub-shift li.shiftnav-active~li.shiftnav-retract{display:none;margin:0}.shiftnav ul.shiftnav-menu li.shiftnav-sub-shift>.sub-menu.shiftnav-sub-active-current>li.shiftnav-retract{display:block}@media only screen and (max-width:960px){#shiftnav-toggle-main{font-size:16px}}.shiftnav-loading{display:block;position:fixed;bottom:0;right:20px;background:#35ac6a;color:#fff;padding:15px;max-width:400px}.shiftnav-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}.shiftnav-sr-only-focusable:active,.shiftnav-sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}.shiftnav .shiftnav-sr-close{background:#fff;color:#222;width:100%;padding:15px;text-align:center;font-size:16px}.shiftnav.shiftnav-skin-light{font-size:13px;line-height:1.3em;background:#f9f9f9;color:#666}.shiftnav.shiftnav-skin-light ul.shiftnav-menu li.menu-item>.shiftnav-target{color:#666;font-size:13px;font-weight:400;border-top:none;border-bottom:none;text-shadow:none}.shiftnav.shiftnav-skin-light ul.shiftnav-menu li.menu-item .shiftnav-submenu-activation{background:rgba(0,0,0,.1);color:#555}.shiftnav.shiftnav-skin-light ul.shiftnav-menu li.menu-item .shiftnav-submenu-activation:hover{background:rgba(0,0,0,.2);color:#eee}.shiftnav.shiftnav-skin-light ul.shiftnav-menu li.menu-item.shiftnav-active>.shiftnav-submenu-activation,.shiftnav.shiftnav-skin-light ul.shiftnav-menu li.menu-item.shiftnav-in-transition>.shiftnav-submenu-activation{background:rgba(0,0,0,.1);color:#eee}.shiftnav.shiftnav-skin-light ul.shiftnav-menu li.menu-item.shiftnav-active>.shiftnav-target,.shiftnav.shiftnav-skin-light ul.shiftnav-menu li.menu-item.shiftnav-in-transition>.shiftnav-target{color:#fff;background:#007aff;border-top-color:transparent;border-bottom-color:transparent}.shiftnav.shiftnav-skin-light ul.shiftnav-menu li.menu-item ul.sub-menu .current-menu-item>.shiftnav-target,.shiftnav.shiftnav-skin-light ul.shiftnav-menu li.menu-item.current-menu-item>.shiftnav-target{color:#fff;background:#007aff}.shiftnav.shiftnav-skin-light ul.shiftnav-menu>li.menu-item>.shiftnav-target{text-transform:normal}.shiftnav.shiftnav-skin-light ul.shiftnav-menu>li.shiftnav-sub-shift.current-menu-ancestor>.shiftnav-target{color:#fff;background:#007aff;border-top-color:transparent;border-bottom-color:transparent}.shiftnav.shiftnav-skin-light ul.shiftnav-menu li.shiftnav-retract .shiftnav-target{background:rgba(0,0,0,.2);color:#fff;text-transform:normal;font-size:12px;text-align:right}.shiftnav.shiftnav-skin-light ul.shiftnav-menu ul.sub-menu{color:#999;background:#e0e0e0}.shiftnav.shiftnav-skin-light ul.shiftnav-menu ul.sub-menu li.menu-item>.shiftnav-target{color:#999;border-width:inherit;border-top-color:transparent;border-bottom-color:transparent;font-weight:400;font-size:13px}.shiftnav.shiftnav-skin-light ul.shiftnav-menu.shiftnav-sub-always ul.sub-menu li.menu-item>.shiftnav-target{padding-left:50px}.shiftnav.shiftnav-skin-light ul.shiftnav-menu.shiftnav-sub-always ul.sub-menu ul.sub-menu ul.sub-menu li.menu-item>.shiftnav-target{padding-left:75px}.shiftnav.shiftnav-skin-light ul.shiftnav-menu.shiftnav-sub-always ul.sub-menu ul.sub-menu ul.sub-menu ul.sub-menu li.menu-item>.shiftnav-target{padding-left:100px}.shiftnav.shiftnav-skin-light.shiftnav-left-edge{border-right:none}.shiftnav.shiftnav-skin-light.shiftnav-right-edge{border-left:none}.shiftnav.shiftnav-skin-light.shiftnav-nojs ul.shiftnav-menu li.menu-item>.shiftnav-target:hover{color:#fff;background:#007aff;border-top-color:transparent;border-bottom-color:transparent}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:0 0}a:focus{outline:blue dotted 3px;outline-offset:-3px;z-index:9999}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}strong{font-weight:700}.em,em{font-style:italic}p{-webkit-hyphens:auto;-epub-hyphens:auto;-moz-hyphens:auto;hyphens:auto}code{font-family:monospace,serif;font-size:1em}dl,ul{margin:1em 0}ul{padding:0;list-style-type:none}nav ul{list-style:none;list-style-image:none}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.ir{text-indent:100%;white-space:nowrap;overflow:hidden}.cf{zoom:1}.cf:after,.cf:before{content:"";display:table}.cf:after{clear:both}p{-ms-word-wrap:break-word;word-break:break-word;word-wrap:break-word}.last-col{float:right;padding-right:0!important}@media (max-width:767px){.m-all{float:left;padding-right:.75em;width:100%;padding-right:0}}@media (min-width:768px) and (max-width:1029px){.t-all{float:left;padding-right:.75em;width:100%;padding-right:0}.t-1of2{float:left;padding-right:.75em;width:50%}.t-1of3{float:left;padding-right:.75em;width:33.33%}}@media (min-width:1030px){.d-all{float:left;padding-right:.75em;width:100%;padding-right:0}.d-1of2{float:left;padding-right:.75em;width:50%}.d-1of3{float:left;padding-right:.75em;width:33.33%}}#submit{display:inline-block;position:relative;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;text-decoration:none;color:#fff;font-size:.9em;font-size:34px;line-height:34px;font-weight:400;padding:0 24px;border-radius:4px;border:0;cursor:pointer;-webkit-transition:background-color .14s ease-in-out;transition:background-color .14s ease-in-out}#submit:focus,#submit:hover{color:#fff;text-decoration:none;outline:0}#submit:active{top:1px}#submit{background-color:#2980b9}#submit:focus,#submit:hover{background-color:#2574a8}#submit:active{background-color:#2472a4}.field,input[type=color],input[type=date],input[type=datetime-local],input[type=datetime],input[type=email],input[type=month],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=time],input[type=url],input[type=week],select,textarea{display:block;height:40px;line-height:1em;padding:0 12px;margin-bottom:14px;font-size:1em;color:#000;border-radius:3px;vertical-align:middle;box-shadow:none;border:0;width:100%;max-width:400px;font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;background-color:#6e6e6e;-webkit-transition:background-color .24s ease-in-out;transition:background-color .24s ease-in-out}.field:active,.field:focus,input[type=color]:active,input[type=color]:focus,input[type=date]:active,input[type=date]:focus,input[type=datetime-local]:active,input[type=datetime-local]:focus,input[type=datetime]:active,input[type=datetime]:focus,input[type=email]:active,input[type=email]:focus,input[type=month]:active,input[type=month]:focus,input[type=number]:active,input[type=number]:focus,input[type=password]:active,input[type=password]:focus,input[type=search]:active,input[type=search]:focus,input[type=tel]:active,input[type=tel]:focus,input[type=text]:active,input[type=text]:focus,input[type=time]:active,input[type=time]:focus,input[type=url]:active,input[type=url]:focus,input[type=week]:active,input[type=week]:focus,select:active,select:focus,textarea:active,textarea:focus{background-color:#787878;outline:0}.field.error,input[type=color].error,input[type=date].error,input[type=datetime-local].error,input[type=datetime].error,input[type=email].error,input[type=month].error,input[type=number].error,input[type=password].error,input[type=search].error,input[type=tel].error,input[type=text].error,input[type=time].error,input[type=url].error,input[type=week].error,select.error,textarea.error{color:#fbe3e4;border-color:#fbe3e4;background-color:#fff;background-position:99% center;background-repeat:no-repeat;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDREQkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDREQ0YwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ3ODRGRkE2RjA0QTExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERBRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+U8iT5wAAAedJREFUeNqk1U9I02Ecx/HtV3aIFAc1hcRDUoGXRAq0oNLA2CrsEFmHbikZu0iQYIFGYAiegkCpLipBxPpDEBMUzB0EhSG2LhG7hMR2GviPgUTvB57Bw8P3+U23B16HPX8+e/b8nt93wezZSMCnhXETF3AcB5BDCnH8Dq98ExcGHcFn8Ah3cdDni+fxnPDv9oAnTB7CKu6VCFXtChZy56LxUjt+jfuB8toSOth9wd7xWAWhqrUjYR/FRTwWJm+iIPT/w7bQf5ljiZnBg45dtKFX6H+LU8gIY8OEV6vgTkStwXWE8BPTGDHGPqNPz2mCfSOOYkA99TvCt1bhGPL68zMcwmncMuape10jrI+q4BbHi/FLn31S9z2x5tRhTc+1W506ipM+T3oRD4X+8+qtc4SqFvL0z/Fr14S+Szjis8bz9Lvvaq8cwS/wwGfdlqfPSWqTiFlX77o13u9Ym1PBs8JAytpRoy44X9Ft9E/gvbA+rYKn8NcaaMVc8UHgBw4b9/iqUQZ6hOAJFbyDcUflmsEX4a6+wTtHGfhAIUqa1U29Zc2BytouThD8x6xuN5CtMPi2CrXLZkZf/HyZoRFCP7n+QVR4PV7uI/AjGghN7OU/r1ilnqILtfpNC+o6vIFljBKYlhb/F2AAgaBsWR5wRiIAAAAASUVORK5CYII=);outline-color:#fbe3e4}.field.success,input[type=color].success,input[type=date].success,input[type=datetime-local].success,input[type=datetime].success,input[type=email].success,input[type=month].success,input[type=number].success,input[type=password].success,input[type=search].success,input[type=tel].success,input[type=text].success,input[type=time].success,input[type=url].success,input[type=week].success,select.success,textarea.success{color:#e6efc2;border-color:#e6efc2;background-color:#fff;background-position:99% center;background-repeat:no-repeat;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDRERkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDRFMEYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY0MzQ0NERERjA0QjExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERFRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+7olkTQAAAfhJREFUeNqklU9oE0EUhzdroWjw0tBeWlDxkEaIp55TsCU9VKIgCrHBelA8CQ1Kr1WPbZrQ3gqtQqvGqxpQc2jBk6BIIaAGD4qNCKURpDSKiPi98gLDsJt//uBjsztvfnk7895sIPAw6/joGMThFJyAXn2+A+9gA57/TaY/eU0OeBgfhGm4DiGnsb7DAszxBz/NAdcKjMJLuNWCqagHbsscN5+L+hmH4QkMOe1L5jzFfNA2PgT34ajTuY7AGuZB0/hmh5m+gS0r8xv1zRvg+gGCHZiOwnF4DP3iB3sQkYxPd2C6CWfhB9Xwlus5+K1j4jXuaq3a+gM1H9OPcAa+7q9lPidZJqHbiIm7Wg22rsEI7FrPSzAMX/T+ADyAKSsu7Fr1KplehLvwCs5DvfBf65p+MypqRbO1FXK9utH4/QKuaqYTsG3E3INJv00Q46px3+XxanJ/Ute2/vqP4FKDza2KcdljIKdnhS0xXYULTaqmLMZFn8FFSFtvt6x70ExFCS5oUXspq2ssa7oEl1swFa+CGFdgtkHgPDyDKy02zyxNU6lXRUZb1EuHYayNNs+Yh5B0WQo+/8fpJnNTZFuzz2OpjoQ2QruSOQlMy35fEGmEGMxY9e1brxobw7TkWA1h6xfckUPb+JhGoE/Hpfvew7qUld/H9J8AAwDpw3WYrxcZ3QAAAABJRU5ErkJggg==);outline-color:#e6efc2}.field[disabled],input[type=color][disabled],input[type=date][disabled],input[type=datetime-local][disabled],input[type=datetime][disabled],input[type=email][disabled],input[type=month][disabled],input[type=number][disabled],input[type=password][disabled],input[type=search][disabled],input[type=tel][disabled],input[type=text][disabled],input[type=time][disabled],input[type=url][disabled],input[type=week][disabled],select[disabled],textarea[disabled]{cursor:not-allowed;border-color:#cfcfcf;opacity:.6}.field[disabled]:active,.field[disabled]:focus,input[type=color][disabled]:active,input[type=color][disabled]:focus,input[type=date][disabled]:active,input[type=date][disabled]:focus,input[type=datetime-local][disabled]:active,input[type=datetime-local][disabled]:focus,input[type=datetime][disabled]:active,input[type=datetime][disabled]:focus,input[type=email][disabled]:active,input[type=email][disabled]:focus,input[type=month][disabled]:active,input[type=month][disabled]:focus,input[type=number][disabled]:active,input[type=number][disabled]:focus,input[type=password][disabled]:active,input[type=password][disabled]:focus,input[type=search][disabled]:active,input[type=search][disabled]:focus,input[type=tel][disabled]:active,input[type=tel][disabled]:focus,input[type=text][disabled]:active,input[type=text][disabled]:focus,input[type=time][disabled]:active,input[type=time][disabled]:focus,input[type=url][disabled]:active,input[type=url][disabled]:focus,input[type=week][disabled]:active,input[type=week][disabled]:focus,select[disabled]:active,select[disabled]:focus,textarea[disabled]:active,textarea[disabled]:focus{background-color:#d5edf8}input[type=password]{letter-spacing:.3em}textarea{max-width:100%;min-height:120px;line-height:1.5em}select{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAHCAYAAADXhRcnAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEOEZCMjYxMEYwNUUxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEOEZCMjYxMUYwNUUxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQ4RkIyNjBFRjA1RTExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQ4RkIyNjBGRjA1RTExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Vxkp9gAAAI9JREFUeNpidHFxucHAwKAOxE+AmJmBMPgLxDJAfJMFSKwD4kqoAClgA+P///8ZXF1dPaCGcBKh6QcQB+3evXs7WDMIAA2QB1I7gFgDj0aQFz2BGh+AOEwwUaDAQyBlCMR7cGjcC5KHaQQBuM3IAOiKTiBVhiTUDdRUhq4Oq2aoAelAahIQ5wM1zsCmBiDAADhYMJXVZ9u9AAAAAElFTkSuQmCC);background-repeat:no-repeat;background-position:97.5% center}body{font-family:Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:100%;line-height:1.5;color:#000;background-color:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-wrap:break-word}img{max-width:100%;height:auto}.wrap{width:96%;margin:0 auto}a,a:visited{color:#e10e40}a:focus,a:hover,a:visited:focus,a:visited:hover{color:#b60b34}a:link,a:visited:link{-webkit-tap-highlight-color:rgba(0,0,0,.3)}h1,h2{text-rendering:optimizelegibility;font-weight:500}h1 a,h2 a{text-decoration:none}h1,h1.page-title{font-size:2.5em;line-height:1.333em;margin-top:.75em}h2{font-size:1.75em;line-height:1.4em;margin-bottom:.375em}.top-bar{padding:.5em 0;display:flex;align-items:center}.top-bar .header-social{display:none;line-height:0}.top-bar .header-social a{display:inline-block}.top-bar .header-social svg{height:28px}.top-bar .header-social .sml svg{height:24px;vertical-align:.125em}.top-bar .header-phone{text-align:center;font-size:1.2em;font-weight:700}.top-bar .header-phone a{text-decoration:none}.header #logo{text-align:center}.header-email svg{height:20px;display:inline-block;vertical-align:-.25em}.header-mailing i,.header-mailing span{font-size:20px}.header-mailing svg{height:20px;display:inline-block;vertical-align:-.125em}.desktop-banner{display:none}#map{height:100%}.nav{border-bottom:0;margin:0}.nav li a{display:inline-block;color:#e10e40;text-decoration:none;padding:.75em;position:relative}.nav li button{display:inline-block;color:#e10e40;text-decoration:none;padding:.75em .25em;position:relative;line-height:inherit}.nav li ul.sub-menu li a{padding-left:30px}.visually-hidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}button.show-submenu{display:inline-block;border:none}.page-title{margin:0}.entry-content{padding:1.5em 0 0}.entry-content p{margin:0 0 1.5em}.entry-content ul li{list-style:disc;margin-left:2em}.entry-content table{width:100%;border:1px solid #6e6e6e;margin-bottom:1.5em}.entry-content tr{border-bottom:1px solid #6e6e6e}.entry-content tr:nth-child(2n){background-color:#ccc}.tags{margin:0}.comment{position:relative;clear:both;overflow:hidden;padding:1.5em;border-bottom:1px solid #ccc}.comment:last-child{margin-bottom:0}.comment[class*=depth-]{margin-top:1.1em}.comment:not(.depth-1){margin-top:0;margin-left:7px;padding:7px}.comment.odd{background-color:#fff}.comment.even{background:#ccc}#submit{float:right;font-size:1em}.footer{clear:both;background:#ccc;text-align:center}.footer .field,.footer input[type=color],.footer input[type=date],.footer input[type=datetime-local],.footer input[type=datetime],.footer input[type=email],.footer input[type=month],.footer input[type=number],.footer input[type=password],.footer input[type=search],.footer input[type=tel],.footer input[type=text],.footer input[type=time],.footer input[type=url],.footer input[type=week],.footer select,.footer textarea{background:#fff;max-width:100%}.business-name{font-weight:700;font-size:1.05em;margin-bottom:5px}.phone-number{margin-bottom:5px}.email{margin-bottom:5px}.address{margin-bottom:5px}.open-close{display:inline;font-size:.9em}.weekday{font-weight:700}.footer-2 ul{margin-top:0}.bottom-bar{background:#000;color:#fff;text-align:center;padding:1em 0}.bottom-bar a{color:#fff;text-decoration:none}.bottom-bar div{display:inline}.bottom-bar-social svg{fill:#fff;height:20px;vertical-align:-.2em}.bottom-bar-social .sml svg{height:16px;vertical-align:-.1em}#content .field,#content input[type=color],#content input[type=date],#content input[type=datetime-local],#content input[type=datetime],#content input[type=email],#content input[type=month],#content input[type=number],#content input[type=password],#content input[type=search],#content input[type=tel],#content input[type=text],#content input[type=time],#content input[type=url],#content input[type=week],#content select,#content textarea{background-color:#ddd;max-width:100%}#content .field:active,#content .field:focus,#content input[type=color]:active,#content input[type=color]:focus,#content input[type=date]:active,#content input[type=date]:focus,#content input[type=datetime-local]:active,#content input[type=datetime-local]:focus,#content input[type=datetime]:active,#content input[type=datetime]:focus,#content input[type=email]:active,#content input[type=email]:focus,#content input[type=month]:active,#content input[type=month]:focus,#content input[type=number]:active,#content input[type=number]:focus,#content input[type=password]:active,#content input[type=password]:focus,#content input[type=search]:active,#content input[type=search]:focus,#content input[type=tel]:active,#content input[type=tel]:focus,#content input[type=text]:active,#content input[type=text]:focus,#content input[type=time]:active,#content input[type=time]:focus,#content input[type=url]:active,#content input[type=url]:focus,#content input[type=week]:active,#content input[type=week]:focus,#content select:active,#content select:focus,#content textarea:active,#content textarea:focus{filter:brightness(105%)}button#shiftnav-toggle-main-button svg{fill:#fff}@media only screen and (min-width:481px){.desktop-banner{display:block}.mobile-banner{display:none}}@media only screen and (min-width:768px){.top-bar{padding:.5em 0}.top-bar .header-social{display:block}.top-bar .header-phone{text-align:right}.nav{border:0}.nav ul{margin-top:0;margin-bottom:0}.nav li{float:left;position:relative}.nav li a{border-bottom:0}.nav li a:focus,.nav li a:hover{color:#e10e40;text-decoration:underline}.nav li ul.sub-menu{margin-top:0;border-top:0;position:absolute;visibility:hidden;z-index:8999}.nav li ul.sub-menu li a{padding-left:10px;border-right:0;display:block;width:180px;border-bottom:1px solid #ccc}.nav li ul.sub-menu li:last-child a{border-bottom:0}.nav li ul.sub-menu li ul{top:0;left:100%}.nav li.hover>ul,.nav li:hover>ul{top:auto;visibility:visible}h1{display:inline-block}}@media only screen and (min-width:1030px){#content{min-height:30vh}.header #logo{text-align:left}.logo-nav{display:flex;align-items:center}#inner-header{display:flex;align-items:center}}@media print{#shiftnav-toggle-main{position:absolute!important}*{background:0 0!important;color:#000!important;text-shadow:none!important;filter:none!important;-ms-filter:none!important}a,a:visited{color:#444!important;text-decoration:underline}a:after,a:visited:after{content:" (" attr(href) ")"}a abbr[title]:after,a:visited abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="#"]:after,a[href^="javascript:"]:after{content:""}img,tr{page-break-inside:avoid}img{max-width:100%!important}@page{margin:.5cm}h2,p{orphans:3;widows:3}h2{page-break-after:avoid}nav{display:none}}.fa{font-family:var(--fa-style-family,"Font Awesome 6 Free");font-weight:var(--fa-style,900)}.fa{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:var(--fa-display,inline-block);font-style:normal;font-variant:normal;line-height:1;text-rendering:auto}.fa-chevron-left:before{content:"\f053"}:root{--fa-style-family-brands:"Font Awesome 6 Brands";--fa-font-brands:normal 400 1em/1 "Font Awesome 6 Brands"}@font-face{font-family:"Font Awesome 6 Brands";font-style:normal;font-weight:400;font-display:swap;src:url(https://use.fontawesome.com/releases/v6.5.1/webfonts/fa-brands-400.woff2) format("woff2"),url(https://use.fontawesome.com/releases/v6.5.1/webfonts/fa-brands-400.ttf) format("truetype")}:root{--fa-font-regular:normal 400 1em/1 "Font Awesome 6 Free"}:root{--fa-style-family-classic:"Font Awesome 6 Free";--fa-font-solid:normal 900 1em/1 "Font Awesome 6 Free"}@font-face{font-family:"Font Awesome 5 Brands";font-display:swap;font-weight:400;src:url(https://use.fontawesome.com/releases/v6.5.1/webfonts/fa-brands-400.woff2) format("woff2"),url(https://use.fontawesome.com/releases/v6.5.1/webfonts/fa-brands-400.ttf) format("truetype")}@font-face{font-family:FontAwesome;font-display:swap;src:url(https://use.fontawesome.com/releases/v6.5.1/webfonts/fa-brands-400.woff2) format("woff2"),url(https://use.fontawesome.com/releases/v6.5.1/webfonts/fa-brands-400.ttf) format("truetype")}.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}@-webkit-keyframes swing{20%{-webkit-transform:rotate3d(0,0,1,15deg);transform:rotate3d(0,0,1,15deg)}40%{-webkit-transform:rotate3d(0,0,1,-10deg);transform:rotate3d(0,0,1,-10deg)}60%{-webkit-transform:rotate3d(0,0,1,5deg);transform:rotate3d(0,0,1,5deg)}80%{-webkit-transform:rotate3d(0,0,1,-5deg);transform:rotate3d(0,0,1,-5deg)}100%{-webkit-transform:rotate3d(0,0,1,0deg);transform:rotate3d(0,0,1,0deg)}}@keyframes swing{20%{-webkit-transform:rotate3d(0,0,1,15deg);transform:rotate3d(0,0,1,15deg)}40%{-webkit-transform:rotate3d(0,0,1,-10deg);transform:rotate3d(0,0,1,-10deg)}60%{-webkit-transform:rotate3d(0,0,1,5deg);transform:rotate3d(0,0,1,5deg)}80%{-webkit-transform:rotate3d(0,0,1,-5deg);transform:rotate3d(0,0,1,-5deg)}100%{-webkit-transform:rotate3d(0,0,1,0deg);transform:rotate3d(0,0,1,0deg)}}.swing{-webkit-transform-origin:top center;transform-origin:top center;-webkit-animation-name:swing;animation-name:swing}body{font-family:Montserrat;font-weight:400;position:relative}.wrap{max-width:1140px}#content{background-color:#fff}#content a{color:#071230;text-decoration:underline}#content a:active,#content a:focus,#content a:hover{color:#071230}.header-social svg{fill:#fff}.header-address svg{vertical-align:-.125em}.inner-top-bar{display:flex;align-items:center}.top-bar{background-color:#427cca}.header-phone a,.top-bar{color:#fff}h1,h2{font-family:'Bebas Neue'}nav .nav li a,nav .nav li button{background-color:#427cca;color:#fff}nav .nav li button svg{fill:#fff;vertical-align:-.125em}nav .nav li a:focus,nav .nav li a:hover,nav .nav li button:focus,nav .nav li button:hover,nav .nav li:hover,nav .nav li:hover button,nav .nav li:hover>span>a{background-color:#49aedf;color:#fff;text-decoration:none}nav .nav li button:active svg,nav .nav li button:focus svg,nav .nav li button:hover svg{fill:#fff}.nav li.current-menu-item a{background-color:#427cca;color:#fff}.nav li ul.sub-menu li a{background-color:#427cca;color:#fff}.nav li ul.sub-menu li a:focus,.nav li ul.sub-menu li a:hover{background-color:#49aedf;color:#fff}.banner{min-height:200px;background-size:cover;background-position:center center;position:relative}.field,input[type=color],input[type=date],input[type=datetime-local],input[type=datetime],input[type=email],input[type=month],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=time],input[type=url],input[type=week],select,textarea{background-color:#ddd;max-width:100%;color:#fff}.field:active,.field:focus,input[type=color]:active,input[type=color]:focus,input[type=date]:active,input[type=date]:focus,input[type=datetime-local]:active,input[type=datetime-local]:focus,input[type=datetime]:active,input[type=datetime]:focus,input[type=email]:active,input[type=email]:focus,input[type=month]:active,input[type=month]:focus,input[type=number]:active,input[type=number]:focus,input[type=password]:active,input[type=search]:active,input[type=search]:focus,input[type=tel]:active,input[type=tel]:focus,input[type=time]:active,input[type=time]:focus,input[type=url]:active,input[type=url]:focus,input[type=week]:active,input[type=week]:focus,select:active,select:focus,textarea:active,textarea:focus{filter:brightness(105%);outline:0}footer.footer{background-color:#49aedf;color:#fff}#footer-columns .footer-col-title{font-weight:700;margin:1.3em 0 1.5em;font-size:1.1em}.footer-nav{margin-top:0}.footer a{color:#fff;text-decoration:none}.footer a:hover{color:#fff}.bottom-bar{background:#427cca;color:#fff}.bottom-bar a,.bottom-bar a:active,.bottom-bar a:visited{color:#fff}.bottom-bar svg{fill:#fff}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal}.screen-reader-text:focus{background-color:#f1f1f1;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,.6);clip:auto;display:block;font-weight:700;height:auto;left:0;line-height:normal;padding:1em 1.618em;text-decoration:none;top:0;width:auto;z-index:100000;outline:0}.screen-reader-text.skip-link:focus{-webkit-clip-path:none}#shiftnav-toggle-main.shiftnav-toggle.shiftnav-toggle-main-entire-bar:before{content:url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" height="16" width="14" fill="%23000000" viewBox="0 0 448 512"%3E%3C!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--%3E%3Cpath d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/%3E%3C/svg%3E')}@media only screen and (max-width:767px){.nav{display:none!important}}#shiftnav-toggle-main{background:#fff;color:#000}.lazyload{background-image:none!important}.lazyload:before{background-image:none!important}.button{text-align:center}.button a{background:#427cca!important;text-decoration:none!important;color:#fff!important;display:inline-block;padding:.42em 2em!important;border-radius:270px!important;border:1px solid #fff;font-size:1em}.header-address{text-align:center!important;color:#fff}.header-address a{color:#fff}#shiftnav-toggle-main.shiftnav-toggle-main-entire-bar::before{background:#fff!important}@media only screen and (min-width:768px){#shiftnav-toggle-main{display:none}.shiftnav-wrap{padding-top:0!important}.header-address{text-align:right!important;color:#fff}.banner{min-height:500px!important}.button{text-align:left}.button a{padding:.7em 2em!important;font-size:1.2em}}</style><link rel="preload" data-rocket-preload as="image" href="../wp-content/uploads/2025/02/banner1.jpg" fetchpriority="high">
+
+				<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<link rel="pingback" href="https://www.cleansweep-cleaning.com/xmlrpc.php">
+
+		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<link rel="canonical" href="../index.html%3Fp=3.html" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Privacy Policy - Clean Sweep Cleaning Services" />
+	<meta property="og:description" content="Who we are Suggested text: Our website address is: https://www.cleansweep-cleaning.com. Comments Suggested text: When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&#8217;s IP address and browser user agent string to help spam detection. An anonymized string created from your email address (also called a... Read more &raquo;" />
+	<meta property="og:url" content="https://www.cleansweep-cleaning.com/privacy-policy/" />
+	<meta property="og:site_name" content="Clean Sweep Cleaning Services" />
+	<meta property="article:modified_time" content="2025-03-11T22:11:10+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="3 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.cleansweep-cleaning.com/privacy-policy/","url":"https://www.cleansweep-cleaning.com/privacy-policy/","name":"Privacy Policy - Clean Sweep Cleaning Services","isPartOf":{"@id":"https://www.cleansweep-cleaning.com/#website"},"datePublished":"2025-02-12T13:11:06+00:00","dateModified":"2025-03-11T22:11:10+00:00","breadcrumb":{"@id":"https://www.cleansweep-cleaning.com/privacy-policy/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.cleansweep-cleaning.com/privacy-policy/"]}]},{"@type":"BreadcrumbList","@id":"https://www.cleansweep-cleaning.com/privacy-policy/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.cleansweep-cleaning.com/"},{"@type":"ListItem","position":2,"name":"Privacy Policy"}]},{"@type":"WebSite","@id":"https://www.cleansweep-cleaning.com/#website","url":"https://www.cleansweep-cleaning.com/","name":"Clean Sweep Cleaning Services","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.cleansweep-cleaning.com/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+
+<link rel='dns-prefetch' href='https://use.fontawesome.com/' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Clean Sweep Cleaning Services &raquo; Feed" href="../feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="Clean Sweep Cleaning Services &raquo; Comments Feed" href="../comments/feed/index.html" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="../wp-json/oembed/1.0/embed%3Furl=https:%252F%252Fwww.cleansweep-cleaning.com%252Fprivacy-policy%252F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed%3Furl=https:%252F%252Fwww.cleansweep-cleaning.com%252Fprivacy-policy%252F&amp;format=xml" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><style id='wp-img-auto-sizes-contain-inline-css' type='text/css'></style>
+<style id='wp-emoji-styles-inline-css' type='text/css'></style>
+<style id='wp-block-library-inline-css' type='text/css'></style>
+<style id='classic-theme-styles-inline-css' type='text/css'></style>
+<style id='global-styles-inline-css' type='text/css'></style>
+
+
+
+
+
+
+
+
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(../wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+/*# sourceURL=rocket-lazyload-inline-css */
+</style>
+
+
+<script type="text/javascript" src="../wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.cleansweep-cleaning.com/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.cleansweep-cleaning.com/wp-content/themes/blueprint/library/js/libs/modernizr.custom.min.js" id="blueprint-modernizr-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.cleansweep-cleaning.com/wp-content/themes/blueprint/library/js/libs/wow.min.js" id="wow-js"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" id="wow-js-after">
+/* <![CDATA[ */
+new WOW().init();
+//# sourceURL=wow-js-after
+/* ]]> */
+</script>
+<link rel="https://api.w.org/" href="../wp-json/index.html" /><link rel="alternate" title="JSON" type="application/json" href="../wp-json/wp/v2/pages/3" /><link rel='shortlink' href='../index.html%3Fp=3.html' />
+
+		<!-- ShiftNav CSS
+	================================================================ -->
+		<style type="text/css" id="shiftnav-dynamic-css"></style>
+		<!-- end ShiftNav CSS -->
+
+	<noscript><style>.lazyload[data-src]{display:none !important;}</style></noscript><style></style><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0H1GYDP6NB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0H1GYDP6NB');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org/","@type":"WebSite","name":"Clean Sweep Cleaning Services","url":"https://www.cleansweep-cleaning.com/","potentialAction":{"@type":"SearchAction","target":"{search_term_string}","query-input":"required name=search_term_string"}}</script>
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Clean Sweep Cleaning Services","image":"https://www.cleansweep-cleaning.com/wp-content/uploads/2025/02/CSCS-1-367w.png","@id":"https://www.cleansweep-cleaning.com/","url":"https://www.cleansweep-cleaning.com/","telephone":"(217) 714-7408","areaServed":[{"@type":"Place","name":"Champaign, IL"},{"@type":"Place","name":"Urbana, IL"},{"@type":"Place","name":"Savoy, IL"},{"@type":"Place","name":"Mahomet, IL"},{"@type":"Place","name":"Rantoul, IL"}],"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"},"sameAs":"https://www.cleansweep-cleaning.com/"}</script>
+<link rel="icon" href="../wp-content/uploads/2025/03/icon-125x125.jpg" sizes="32x32" />
+<link rel="icon" href="../wp-content/uploads/2025/03/icon-300x300.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="../wp-content/uploads/2025/03/icon-300x300.jpg" />
+<meta name="msapplication-TileImage" content="https://www.cleansweep-cleaning.com/wp-content/uploads/2025/03/icon-300x300.jpg" />
+		<style type="text/css" id="wp-custom-css"></style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+        
+                                
+	<meta name="generator" content="WP Rocket 3.20.1.2" data-wpr-features="wpr_remove_unused_css wpr_delay_js wpr_minify_js wpr_lazyload_iframes wpr_preconnect_external_domains wpr_oci wpr_image_dimensions wpr_minify_css wpr_host_fonts_locally wpr_desktop" /></head>
+
+	<body class="privacy-policy wp-singular page-template-default page page-id-3 wp-theme-blueprint">
+		
+		
+	<!-- ShiftNav Main Toggle -->
+	<div id="shiftnav-toggle-main" class="shiftnav-toggle shiftnav-toggle-shiftnav-main shiftnav-toggle-main-align-center shiftnav-toggle-style-full_bar shiftnav-togglebar-gap-auto shiftnav-toggle-main-entire-bar shiftnav-toggle-edge-left shiftnav-toggle-icon-x" tabindex="0" 	data-shiftnav-target="shiftnav-main"	><div  class="shiftnav-main-toggle-content shiftnav-toggle-main-block">Menu</div></div>
+	<!-- /#shiftnav-toggle-main -->
+
+			
+			
+			<header  class="header" role="banner">
+
+				<a class="skip-link screen-reader-text" href="../index.html%3Fp=3.html#nav">Skip to navigation</a>
+				
+				<a class="skip-link screen-reader-text" href="../index.html%3Fp=3.html#content">Skip to content</a>
+
+            	
+	<div class="top-bar cf" >
+	
+		<div  class="inner-top-bar wrap">
+			
+							
+								
+				<div title="Social Media Links" class="header-social d-1of2 t-1of2 m-all">
+
+											<a href="https://www.facebook.com/p/Clean-Sweep-Cleaning-Services-100057254747399/" target="_new" title="Visit Clean Sweep Cleaning Services Facebook Page (Opens in new tab)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg></a>
+					
+					
+											<a href="https://maps.app.goo.gl/bj1ekMbgKnXtSY9V7" target="_new" title="Visit Clean Sweep Cleaning Services Google Page (Opens in new tab)" class="sml"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg></a>
+					
+										
+					
+					
+					
+					 
+
+					 
+					
+					
+																<a href="mailto:pdixon701@gmail.com" target="_new" title="Send email to Clean Sweep Cleaning Services (Opens in new tab)" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></a>
+					
+				</div><!--header-social--> 
+						
+				<div class="header-phone d-1of2 t-1of2 m-all last-col">
+					
+						Call Today! <a href="tel:(217) 714-7408" aria-label="Call 2 1 7. 7 1 4. 7 4 0 8"><span class="header-phone-number">(217) 714-7408</span></a>
+
+					
+											
+
+				</div><!--header-phone--> 
+			
+					
+
+		</div><!--inner-top-bar-->
+
+	</div><!--top-bar-->
+				
+								
+				<div  class="logo-nav cf" style="background-color: #000000;">
+	<div  id="inner-header" class="wrap cf">
+
+		<div id="logo" class="d-1of2 t-1of2 m-all" itemscope itemtype="http://schema.org/Organization">
+			<a itemprop="url" href="../index.html" rel="nofollow"><img width="320" height="104" itemprop="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAABoAQAAAACoYxToAAAAAnRSTlMAAHaTzTgAAAAbSURBVFjD7cExAQAAAMKg9U9tDQ+gAAAAAD4MEKgAAW709/wAAAAASUVORK5CYII=" alt="Clean Sweep Cleaning Services Logo" data-src="https://www.cleansweep-cleaning.com/wp-content/uploads/2025/02/CSCS-1-367w.png" decoding="async" class="lazyload" data-eio-rwidth="320" data-eio-rheight="104"><noscript><img width="320" height="104" itemprop="logo" src="../wp-content/uploads/2025/02/CSCS-1-367w.png" alt="Clean Sweep Cleaning Services Logo" data-eio="l"></noscript>
+			</a>
+		</div><!--logo-->
+
+		<div class="header-address d-1of2 t-1of2 m-all">
+
+							<div class="header-email"><span class="contacts"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"></path></svg> </span><a href="mailto:pdixon701@gmail.com">pdixon701@gmail.com</a></div>
+				<div class="header-mailing"><span class="contacts"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="15" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M384 192c0 87.4-117 243-168.3 307.2c-12.3 15.3-35.1 15.3-47.4 0C117 435 0 279.4 0 192C0 86 86 0 192 0S384 86 384 192z"/></svg> </span> Champaign, Il 61821</div>
+						
+		</div><!--header-address-->
+
+	</div><!--inner-header-->
+	
+</div><!--logo-nav-->
+
+<div class="nav-bg cf" style="background-color: #427cca;">
+	
+	<nav class="wrap cf" id="nav" aria-label="Main" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+		<ul id="menu-main-menu" class="nav top-nav cf"><li id="menu-item-183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-183"><span itemprop="name"><a href="../index.html" itemprop="url">Home</a></span></li>
+<li id="menu-item-184" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-184"><span itemprop="name"><a href="../index.html%3Fp=57.html" itemprop="url">About</a></span></li>
+<li id="menu-item-186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-186"><span itemprop="name"><a href="../index.html%3Fp=139.html" itemprop="url">Our Services</a></span>
+<ul class="sub-menu">
+	<li id="menu-item-187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-187"><span itemprop="name"><a href="../index.html%3Fp=148.html" itemprop="url">Residential Services</a></span></li>
+	<li id="menu-item-185" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-185"><span itemprop="name"><a href="../index.html%3Fp=157.html" itemprop="url">Commercial Cleaning</a></span></li>
+	<li id="menu-item-194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194"><span itemprop="name"><a href="../index.html%3Fp=188.html" itemprop="url">Window Cleaning and Move-In Move-Out</a></span></li>
+</ul>
+</li>
+<li id="menu-item-208" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-208"><span itemprop="name"><a href="../index.html%3Fp=195.html" itemprop="url">Service Areas</a></span>
+<ul class="sub-menu">
+	<li id="menu-item-207" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-207"><span itemprop="name"><a href="../index.html%3Fp=202.html" itemprop="url">Champaign</a></span></li>
+	<li id="menu-item-209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-209"><span itemprop="name"><a href="../index.html%3Fp=198.html" itemprop="url">Urbana</a></span></li>
+</ul>
+</li>
+<li id="menu-item-230" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-230"><span itemprop="name"><a href="../index.html%3Fp=227.html" itemprop="url">Gallery</a></span></li>
+<li id="menu-item-214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-214"><span itemprop="name"><a href="../index.html%3Fp=211.html" itemprop="url">Contact</a></span></li>
+</ul>	</nav>
+	
+</div><!--nav-bg-->
+
+				
+			</header>
+			
+			
+		
+		<div  class="banner desktop-banner skip-lazy" role="complementary" style="background-image: url(../wp-content/uploads/2025/02/banner1.jpg );">
+			 
+		</div><!--banner-->
+		<div  class="banner mobile-banner skip-lazy" role="complementary" style="background-image: url(../wp-content/uploads/2025/02/banner480.jpg );">
+			 
+		</div><!--banner-->
+
+		
+
+
+			
+				
+				
+				
+			
+
+	<div id="content" >
+				<div  id="inner-content" class="wrap cf">
+				
+			 				<main id="post-3" class="m-all t-all d-all cf post-3 page type-page status-publish" >
+
+					<header class="article-header">
+					
+						<h1 class="page-title">Privacy Policy</h1>									
+
+					</header> 						
+					<section class="entry-content cf">
+					
+						
+<h2 class="wp-block-heading">Who we are</h2>
+
+
+<p><strong class="privacy-policy-tutorial">Suggested text: </strong>Our website address is: https://www.cleansweep-cleaning.com.</p>
+
+
+<h2 class="wp-block-heading">Comments</h2>
+
+
+<p><strong class="privacy-policy-tutorial">Suggested text: </strong>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&#8217;s IP address and browser user agent string to help spam detection.</p>
+
+
+<p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p>
+
+
+<h2 class="wp-block-heading">Media</h2>
+
+
+<p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p>
+
+
+<h2 class="wp-block-heading">Cookies</h2>
+
+
+<p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p>
+
+
+<p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p>
+
+
+<p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select &quot;Remember Me&quot;, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p>
+
+
+<p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p>
+
+
+<h2 class="wp-block-heading">Embedded content from other websites</h2>
+
+
+<p><strong class="privacy-policy-tutorial">Suggested text: </strong>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p>
+
+
+<p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p>
+
+
+<h2 class="wp-block-heading">Who we share your data with</h2>
+
+
+<p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you request a password reset, your IP address will be included in the reset email.</p>
+
+
+<h2 class="wp-block-heading">How long we retain your data</h2>
+
+
+<p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.</p>
+
+
+<p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p>
+
+
+<h2 class="wp-block-heading">What rights you have over your data</h2>
+
+
+<p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p>
+
+
+<h2 class="wp-block-heading">Where your data is sent</h2>
+
+
+<p><strong class="privacy-policy-tutorial">Suggested text: </strong>Visitor comments may be checked through an automated spam detection service.</p>
+
+						
+					</section> 						
+						
+				</main>
+						
+									
+		</div>
+			</div>
+
+		
+		
+		
+
+		
+		
+		
+		
+				
+			<footer class="footer" role="contentinfo" >	
+				
+				<div  id="inner-footer" class="wrap cf">
+					
+						
+
+	<div  id="footer-columns">
+
+			
+
+		
+
+	<div class="contact-info footer-1 d-1of3 t-1of3 m-all">	
+
+
+	
+	<a name="contact"></a> 
+	<div class="footer-col-title" style="color: #ffffff !important;">Contact Us</div>
+
+	<div class="business-info-item business-name">	</div>
+		
+	<div class="business-info-item phone-number"><span class="contacts">Phone: </span><a  href="tel:(217) 714-7408" aria-label="Call 2 1 7. 7 1 4. 7 4 0 8">(217) 714-7408</a></div>	
+	<div class="business-info-item email"><span class="contacts">Email: </span><a  href="mailto:pdixon701@gmail.com">pdixon701@gmail.com</a></div>
+	<div class="business-info-item address">
+		<span class="contacts">Address: </span>		<br>Champaign, Il 61821	</div>	
+		
+	
+	
+</div><!--contact-info-->
+				
+
+			
+
+<div class="footer-2 d-1of3 t-1of3 m-all">
+
+
+	
+
+	<div class="footer-col-title" style="color: #ffffff !important;">Navigation</div>
+	
+		
+			<div role="navigation">
+				<div class="footer-links cf"><ul id="menu-footer" class="footer-nav cf"><li id="menu-item-215" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-215"><a href="../index.html" itemprop="url">Home</a></li>
+<li id="menu-item-216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-216"><a href="../index.html%3Fp=57.html" itemprop="url">About</a></li>
+<li id="menu-item-218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-218"><a href="../index.html%3Fp=139.html" itemprop="url">Our Services</a></li>
+<li id="menu-item-219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-219"><a href="../index.html%3Fp=195.html" itemprop="url">Service Areas</a></li>
+<li id="menu-item-229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-229"><a href="../index.html%3Fp=227.html" itemprop="url">Gallery</a></li>
+<li id="menu-item-217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-217"><a href="../index.html%3Fp=211.html" itemprop="url">Contact</a></li>
+</ul></div>				
+			</div>      
+	
+		
+</div><!--footer-2-->
+				
+
+	
+
+	<div class="contact-info footer-3 d-1of3 t-1of3 m-all">
+
+
+	
+
+
+<div class="footer-col-title" style="color: #ffffff !important;">Business Hours</div>
+	
+			<div class="hours">                            
+	<!--<div style="margin-bottom: 0px;">Hours:</div>-->
+	<div class="cf">
+		<div class="open-close"><span class="weekday monday">Monday:</span> 
+							 9:00 am</div> -  
+				 <div class="open-close">6:00 pm											</div>
+	</div> 
+
+	<div class="cf">
+		<div class="open-close"><span class="weekday">Tuesday:</span> 
+							 9:00 am</div> -  
+				 <div class="open-close">6:00 pm											</div>
+	</div>
+
+	<div class="cf">
+		<div class="open-close"><span class="weekday">Wednesday:</span> 
+							 9:00 am</div> -  
+				 <div class="open-close">6:00 pm											</div>
+	</div>
+		
+	<div class="cf">
+		<div class="open-close"><span class="weekday">Thursday:</span> 
+							 9:00 am</div> -  
+				 <div class="open-close">6:00 pm											</div>
+	</div>
+		
+	<div class="cf">
+		<div class="open-close"><span class="weekday">Friday:</span> 
+							 9:00 am</div> -  
+				 <div class="open-close">6:00 pm											</div>
+	</div>
+		
+	<div class="cf">
+		<div class="open-close"><span class="weekday weekend">Saturday:</span> 
+							 9:00 am</div> -  
+				 <div class="open-close">6:00 pm											</div>
+	</div>
+		
+	<div class="cf">
+		<div class="open-close"><span class="weekday weekend">Sunday:</span> 
+									Closed		</div>
+	</div>
+
+	</div><!--hours-->   
+	
+	<!--
+			<div class="footer-social">                                                            
+									<a href="https://www.facebook.com/p/Clean-Sweep-Cleaning-Services-100057254747399/" target="_new"><i class="fab fa-facebook-square"></i></a>
+				
+				
+				  					<a href="https://maps.app.goo.gl/bj1ekMbgKnXtSY9V7" target="_new"><i class="fab fa-google" aria-hidden="true"></i></a>
+				
+								
+				
+				
+				
+				
+				
+								
+				
+			</div><!--footer-social-->
+	
+</div><!--footer-3--> 
+
+	</div><!--footer-columns--> 
+
+
+					
+				</div><!--inner-footer-->
+				
+				<div  class="bottom-bar source-org copyright">&copy; 2026 Clean Sweep Cleaning Services | <div  class="Bottom Bar Navigation"><a href="../index.html%3Fp=270.html">Sitemap</a> | <a href="../index.html%3Fp=3.html">Privacy Policy</a></div>
+
+	
+		
+				
+			&nbsp;|&nbsp;<div  title="Social Media Links" class="bottom-bar-social">	
+
+			
+											<a href="https://www.facebook.com/p/Clean-Sweep-Cleaning-Services-100057254747399/" target="_new" title="Visit Clean Sweep Cleaning Services Facebook Page (Opens in new tab)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg></a>
+					
+					
+											<a href="https://maps.app.goo.gl/bj1ekMbgKnXtSY9V7" target="_new" title="Visit Clean Sweep Cleaning Services Google Page (Opens in new tab)" class="sml"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg></a>
+					
+										
+					
+					
+					
+					 
+
+					 
+					
+					
+																<a href="mailto:pdixon701@gmail.com" target="_new" title="Send email to Clean Sweep Cleaning Services (Opens in new tab)" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></a>
+					
+		</div><!--bottom-bar-social-->
+	
+	
+</div>
+			</footer>
+			
+				
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/blueprint/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+
+
+	<!-- ShiftNav #shiftnav-main -->
+	<div  class="shiftnav shiftnav-nojs shiftnav-shiftnav-main shiftnav-left-edge shiftnav-skin-light shiftnav-transition-standard" id="shiftnav-main" data-shiftnav-id="shiftnav-main">
+		<div  class="shiftnav-inner">
+
+			
+			<nav class="shiftnav-nav"><ul id="menu-main-menu-1" class="shiftnav-menu shiftnav-targets-default shiftnav-targets-text-default shiftnav-targets-icon-default"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-183 shiftnav-depth-0"><a class="shiftnav-target"  href="../index.html" itemprop="url">Home</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-184 shiftnav-depth-0"><a class="shiftnav-target"  href="../index.html%3Fp=57.html" itemprop="url">About</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-186 shiftnav-sub-always shiftnav-depth-0"><a class="shiftnav-target"  href="../index.html%3Fp=139.html" itemprop="url">Our Services</a>
+<ul class="sub-menu sub-menu-1">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-187 shiftnav-depth-1"><a class="shiftnav-target"  href="../index.html%3Fp=148.html" itemprop="url">Residential Services</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-185 shiftnav-depth-1"><a class="shiftnav-target"  href="../index.html%3Fp=157.html" itemprop="url">Commercial Cleaning</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194 shiftnav-depth-1"><a class="shiftnav-target"  href="../index.html%3Fp=188.html" itemprop="url">Window Cleaning and Move-In Move-Out</a></li><li class="shiftnav-retract"><button tabindex="0" class="shiftnav-target"><i class="fa fa-chevron-left"></i> Back</button></li></ul>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-208 shiftnav-sub-always shiftnav-depth-0"><a class="shiftnav-target"  href="../index.html%3Fp=195.html" itemprop="url">Service Areas</a>
+<ul class="sub-menu sub-menu-1">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-207 shiftnav-depth-1"><a class="shiftnav-target"  href="../index.html%3Fp=202.html" itemprop="url">Champaign</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-209 shiftnav-depth-1"><a class="shiftnav-target"  href="../index.html%3Fp=198.html" itemprop="url">Urbana</a></li><li class="shiftnav-retract"><button tabindex="0" class="shiftnav-target"><i class="fa fa-chevron-left"></i> Back</button></li></ul>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-230 shiftnav-depth-0"><a class="shiftnav-target"  href="../index.html%3Fp=227.html" itemprop="url">Gallery</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-214 shiftnav-depth-0"><a class="shiftnav-target"  href="../index.html%3Fp=211.html" itemprop="url">Contact</a></li></ul></nav>
+			<button class="shiftnav-sr-close shiftnav-sr-only shiftnav-sr-only-focusable">
+				&times; Close Panel			</button>
+
+		</div><!-- /.shiftnav-inner -->
+	</div><!-- /.shiftnav #shiftnav-main -->
+
+
+	<script type="text/javascript" id="eio-lazy-load-js-before">
+/* <![CDATA[ */
+var eio_lazy_vars = {"exactdn_domain":"","skip_autoscale":0,"bg_min_dpr":1.100000000000000088817841970012523233890533447265625,"threshold":300,"use_dpr":1};
+//# sourceURL=eio-lazy-load-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" src="../wp-content/plugins/ewww-image-optimizer/includes/lazysizes.min.js" id="eio-lazy-load-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" id="shiftnav-js-extra">
+/* <![CDATA[ */
+var shiftnav_data = {"shift_body":"off","shift_body_wrapper":"","lock_body":"on","lock_body_x":"off","open_current":"off","collapse_accordions":"off","scroll_panel":"on","breakpoint":"768","v":"1.8.2","pro":"0","touch_off_close":"on","scroll_offset":"100","disable_transforms":"off","close_on_target_click":"off","scroll_top_boundary":"50","scroll_tolerance":"10","process_uber_segments":"on"};
+//# sourceURL=shiftnav-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="../wp-content/plugins/shiftnav-responsive-mobile-menu/assets/js/shiftnav.min.js" id="shiftnav-js"></script>
+<script data-minify="1" type="text/javascript" src="../wp-content/cache/min/1/wp-content/themes/blueprint/library/js/scripts.js%3Fver=1761700239" id="blueprint-js-js"></script>
+    <style>
+            </style>
+
+    <script type="rocketlazyloadscript">
+        document.addEventListener("DOMContentLoaded", function(event) {
+                    });
+    </script>
+
+
+    
+    <style>
+            </style>
+
+
+    <script type="rocketlazyloadscript">
+        var accordions_active = null;
+        var accordions_tabs_active = null;
+    </script>
+
+
+    
+
+
+<script>window.lazyLoadOptions={elements_selector:"iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="../wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360">',a='<button class="play" aria-label="Play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>		
+				
+
+	</body>
+
+</html> <!-- end of site. what a ride! -->
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->
