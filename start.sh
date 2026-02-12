@@ -16,5 +16,9 @@ EOF
 chown nginx:nginx /etc/msmtprc
 chmod 600 /etc/msmtprc
 
+# Create msmtp log file writable by nginx (PHP-FPM user).
+touch /var/log/msmtp.log
+chown nginx:nginx /var/log/msmtp.log
+
 php-fpm84 &
 nginx -g "daemon off;"
