@@ -80,7 +80,7 @@ $email_body .= "Submitted: " . date('Y-m-d H:i:s') . "\n";
 
 // Email headers
 $headers = [
-    'From: Clean Sweep Website <noreply@cleansweep-cleaning.brianneradt.com>',
+    'From: Clean Sweep Website <noreply@cleansweep-cleaning.com>',
     'Reply-To: ' . $name . ' <' . $email . '>',
     'X-Mailer: PHP/' . phpversion(),
     'Content-Type: text/plain; charset=UTF-8'
