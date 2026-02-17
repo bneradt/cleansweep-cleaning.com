@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /wp-admin/
+Disallow:
+
+Sitemap: https://www.cleansweep-cleaning.com/sitemap.xml
