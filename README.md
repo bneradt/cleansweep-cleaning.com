@@ -4,7 +4,7 @@ A static business website for a residential/commercial cleaning company in Champ
 
 ## Tech Stack
 
-- **Frontend**: Static WordPress export (HTML, CSS, JavaScript)
+- **Frontend**: Static site (HTML, CSS, JavaScript), originally exported from WordPress
 - **Backend**: PHP 8.4-FPM (contact form only)
 - **Server**: Nginx on Alpine Linux
 - **Email**: Brevo SMTP via msmtp
@@ -67,16 +67,13 @@ Use the `/deploy` Claude Code skill, or manually:
 ```bash
 # On the server:
 cd ~/www/repos/cleansweep-cleaning.com
-git remote update
-git checkout main
-git reset --hard origin/main
+git remote update && git reset --hard origin/main
 cd ~/www/http-server
-docker compose stop cleansweep
-docker compose build cleansweep
-docker compose up -d cleansweep
+docker compose stop cleansweep && docker compose build cleansweep && docker compose up -d cleansweep
+docker compose down ats && docker compose up -d ats
 ```
 
-The site runs behind Apache Traffic Server (ATS) which handles TLS termination and routing.
+The site runs behind Apache Traffic Server (ATS) which handles TLS termination and routing. The ATS cache must be restarted after deploys.
 
 ## Architecture
 
@@ -87,14 +84,16 @@ static-site/                          # Web application root
 ├── our-services/index.html           # Services listing
 ├── contact/index.html                # Contact/Quote form
 ├── gallery/index.html                # Portfolio gallery
+├── sitemap.xml                       # XML sitemap for search engines
+├── robots.txt                        # Crawl rules with sitemap reference
 ├── contact-form-handler.js           # Intercepts Gravity Forms submissions
 ├── api/
 │   └── send-email.php                # Contact form handler (sends to pdixon701@gmail.com)
-├── wp-content/                       # WordPress static assets
+├── wp-content/                       # Static assets (from original WordPress export)
 │   ├── themes/                       # Theme CSS, images
 │   ├── plugins/                      # Plugin assets (fonts, icons)
 │   └── uploads/                      # Gallery images
-└── wp-includes/                      # WordPress core assets (JS, CSS)
+└── wp-includes/                      # Core assets (JS, CSS)
 
 Dockerfile                            # Alpine Linux + Nginx + PHP-FPM + msmtp
 nginx.conf                            # Gzip, static caching, security headers, PHP routing
